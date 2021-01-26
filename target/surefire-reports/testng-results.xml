@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="167658" started-at="2020-05-01T09:30:14Z" finished-at="2020-05-01T09:33:01Z">
+    <groups>
+    </groups>
+    <test name="C:/Users/abhishek.mishra/JavaMavenPracUI" duration-ms="167658" started-at="2020-05-01T09:30:14Z" finished-at="2020-05-01T09:33:01Z">
+      <class name="mvnPracticeTests.tableAssignment">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:mvnPracticeTests.tableAssignment@3cbbc1e0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-01T09:31:00Z" finished-at="2020-05-01T09:31:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tblAssignment()[pri:0, instance:mvnPracticeTests.tableAssignment@3cbbc1e0]" name="tblAssignment" duration-ms="14535" started-at="2020-05-01T09:31:00Z" finished-at="2020-05-01T09:31:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tblAssignment -->
+        <test-method status="PASS" signature="after()[pri:0, instance:mvnPracticeTests.tableAssignment@3cbbc1e0]" name="after" is-config="true" duration-ms="0" started-at="2020-05-01T09:31:14Z" finished-at="2020-05-01T09:31:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- mvnPracticeTests.tableAssignment -->
+      <class name="mvnPracticeTests.travelprac">
+        <test-method status="PASS" signature="flightTest()[pri:0, instance:mvnPracticeTests.travelprac@35fb3008]" name="flightTest" duration-ms="21813" started-at="2020-05-01T09:31:14Z" finished-at="2020-05-01T09:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightTest -->
+        <test-method status="PASS" signature="fromBox()[pri:0, instance:mvnPracticeTests.travelprac@35fb3008]" name="fromBox" duration-ms="54853" started-at="2020-05-01T09:31:36Z" finished-at="2020-05-01T09:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromBox -->
+        <test-method status="PASS" signature="chooseDestination()[pri:0, instance:mvnPracticeTests.travelprac@35fb3008]" name="chooseDestination" duration-ms="30387" started-at="2020-05-01T09:32:31Z" finished-at="2020-05-01T09:33:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseDestination -->
+      </class> <!-- mvnPracticeTests.travelprac -->
+      <class name="mvnPracticeTests.amazonMvnTest">
+        <test-method status="PASS" signature="addToCart()[pri:0, instance:mvnPracticeTests.amazonMvnTest@6df97b55]" name="addToCart" duration-ms="46008" started-at="2020-05-01T09:30:14Z" finished-at="2020-05-01T09:31:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+      </class> <!-- mvnPracticeTests.amazonMvnTest -->
+    </test> <!-- C:/Users/abhishek.mishra/JavaMavenPracUI -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
