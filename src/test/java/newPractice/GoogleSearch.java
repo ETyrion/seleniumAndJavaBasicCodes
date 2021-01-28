@@ -11,33 +11,37 @@ import org.testng.annotations.Test;
 
 public class GoogleSearch {
   WebDriver driver;
-  String url="https://www.techlistic.com/p/demo-selenium-practice.html";
+  String url = "https://www.techlistic.com/p/demo-selenium-practice.html";
+
   @Test
   public void search() throws InterruptedException {
     System.setProperty("webdriver.chrome.driver", "E:\\AutomationPractice\\SeleniumPractice\\chromedriver_win32\\chromedriver.exe");
     driver = new ChromeDriver();
+    int flag = 1;
     driver.get("https://www.google.com/");
     driver.findElement(By.xpath("//*[@class='gLFyf gsfi']")).sendKeys("iphone");
     driver.manage().window().maximize();
-    driver.manage().timeouts().implicitlyWait(300, TimeUnit.MILLISECONDS);
+    driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
     String val;
-    List<WebElement> items= driver.findElements(By.xpath("//*[@class='UUbT9']//ul/descendant::div[@class='sbtc']"));
-    for(int i=0;i < items.size();i++)
-    {
+    //List<WebElement> items = driver.findElements(By.xpath("//*[@class='UUbT9']//ul/descendant::div[@class='sbtc']"));
+
+    List<WebElement> items = driver.findElements(By.xpath("//*[@class='sbtc']"));
+    for (int i = 0; i < items.size(); i++) {
       System.out.println(items.get(i).getText());
-      Thread.sleep(200);
-      val=items.get(i).getText();
-      if(val.equalsIgnoreCase("iphone"))
-      {
+      Thread.sleep(2000);
+      val = items.get(i).getText();
+      if (val.equalsIgnoreCase("iphone 12 price in India")) {
         items.get(i).click();
+        flag = 0;
         break;
-      }
-      else
-      {
-        System.out.println("Not found");
       }
     }
 
+    if (flag == 0) {
+      System.out.println("Found");
+    } else {
+      System.out.println("Not found");
+    }
   }
 
   @Test
@@ -51,16 +55,12 @@ public class GoogleSearch {
     List<WebElement> results = driver.findElements(By.xpath("//*[@class='UUbT9']//ul//li/descendant::div[@class='sbtc']"));
     System.out.print(results.size());
     String suggestedResults;
-    for(int i=0; i< results.size(); i++)
-    {
-      suggestedResults= results.get(i).getText();
-      if(suggestedResults.equalsIgnoreCase("mango people"))
-      {
+    for (int i = 0; i < results.size(); i++) {
+      suggestedResults = results.get(i).getText();
+      if (suggestedResults.equalsIgnoreCase("mango people")) {
         results.get(i).click();
         break;
-      }
-      else
-      {
+      } else {
         continue;
       }
     }
