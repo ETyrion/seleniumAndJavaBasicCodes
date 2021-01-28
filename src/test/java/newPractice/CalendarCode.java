@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class CalendarCode {
   WebDriver driver;
-  String dateTobeSelected = "15-August";
+  String dateTobeSelected = "30-November";
   String[] pickDate = dateTobeSelected.split("-");
   //String vidUrl = "https://www.primevideo.com/region/eu/ref=atv_nb_sf_tv/259-3743311-9272620";
   String mmt = "https://makemytrip.com/";
@@ -32,9 +32,9 @@ public class CalendarCode {
     System.out.println(pickDate[0]);
     System.out.println(pickDate[1]);
     WebElement calendar = driver.findElement(By.id("travel_date"));
-    Thread.sleep(2000);
+    Thread.sleep(1000);
     calendar.click();
-    Thread.sleep(2000);
+    Thread.sleep(1000);
     WebElement arrow = driver.findElement(By.xpath("(//*[@class='next'])[1]"));
     String month;
     arrow.click();
@@ -60,23 +60,24 @@ public class CalendarCode {
   public void mmtDatePicker() throws InterruptedException {
     Thread.sleep(1000);
     driver.navigate().refresh();
-    Thread.sleep(2000);
-    String inputDate = "28-July";
+    Thread.sleep(1000);
+    String inputDate = "9-September";
     String[] dateSelect = inputDate.split("-");
     String month = dateSelect[1];
-    String dt= dateSelect[0];
-    System.out.println(month);
+    String dt = dateSelect[0];
+
     System.out.println(dt);
+    System.out.println(month);
 
     WebElement roundTrip = driver.findElement(By.xpath("//*[@class='fswTabs latoBlack greyText']/li[@data-cy='roundTrip']"));
     Actions axn = new Actions(driver);
     axn.moveToElement(roundTrip).click().build().perform();
-    Thread.sleep(2000);
+    Thread.sleep(1000);
     WebElement calLocator = driver.findElement(By.xpath("(//*[@class='lbl_input latoBold appendBottom10'])[1]"));
     calLocator.click();
 
     WebElement nextBtn = driver.findElement(By.xpath("//*[@class='DayPicker-NavButton DayPicker-NavButton--next']"));
-    Thread.sleep(2000);
+    Thread.sleep(1000);
 
     List<WebElement> months = driver.findElements(By.xpath("//*[@class='DayPicker-Months']//div[@class='DayPicker-Month']"));
 
@@ -89,13 +90,15 @@ public class CalendarCode {
     int flag = 0;
 
     int z = 0;
-    for (int i = 0; i < 6; i++) {
-      Thread.sleep(2000);
+
+    for (int i = 0; i < 8; i++) {
+      Thread.sleep(1000);
 
       for (int j = 0; j < months.size(); j++) {
         z = j + 1;
-        monthHeader = driver.findElement(By.xpath("//*[@class='DayPicker-Months']//*[@class='DayPicker-Month'][" + z + "]")).getText();
-        monthName = monthHeader.split("2");
+        monthHeader = driver.findElement(By.xpath("//*[@class='DayPicker-Months']//*[@class='DayPicker-Month'][" + z + "]//*[@class='DayPicker-Caption']/div")).getText();
+        monthName = monthHeader.split(" ");
+        //System.out.println(monthHeader);
 
         System.out.println(monthName[0]);
 
@@ -113,15 +116,14 @@ public class CalendarCode {
 
     if (flag == 0) {
       System.out.println("Month is not found");
-    }
-
-    else {
+    } else {
       System.out.println("Month is selected, Now choose date");
       List<WebElement> daysOfMonth = driver.findElements(By.xpath("//*[@class='DayPicker-Months']//*[@class='DayPicker-Month'][" + z + "]//*[@class='DayPicker-Body']//div[@class='dateInnerCell']"));
       String dayTobeSelected;
 
       for (int u = 0; u < daysOfMonth.size(); u++) {
         dayTobeSelected = daysOfMonth.get(u).getText();
+        System.out.println(dayTobeSelected);
 
         if (dayTobeSelected.equalsIgnoreCase(dt)) {
           daysOfMonth.get(u).click();
