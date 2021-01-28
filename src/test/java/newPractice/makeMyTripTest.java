@@ -29,7 +29,7 @@ public class makeMyTripTest {
     sleep(1000);
     driver.navigate().refresh();
     sleep(1000);
-    String inputDate = "09-September";
+    String inputDate = "29-November";
     String[] dateSelect = inputDate.split("-");
     String month = dateSelect[1];
     String dt = dateSelect[0];
