@@ -1,27 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <parameter name="URL" value ="http://www.qaclickacademy.com/"/>
-    <test verbose="2" preserve-order="true" name="C:/Users/abhishek.mishra/JavaMavenPracUI">
+    <test verbose="2" preserve-order="true"
+          name="E:/AutomationPractice/Codes/original/newPull/gitSeleniumProj/MvnPractice/src/test/java/newPractice">
         <classes>
-            <class name="mvnPracticeTests.amazonMvnTest">
-                <methods>
-                    <include name="addToCart"/>
-                    <include name="paramTest"/>
-                </methods>
-            </class>
-            <class name="mvnPracticeTests.tableAssignment">
-                <methods>
-                    <include name="tblAssignment"/>
-                    <include name="espnTest"/>
 
+            <class name="newPractice.DropdownLooping">
+                <methods>
+                    <include name="ddLoop"/>
                 </methods>
             </class>
-            <class name="mvnPracticeTests.travelprac">
+
+            <class name="newPractice.RadioButtonClick">
                 <methods>
-                    <include name="flightTest"/>
-                    <include name="fromBox"/>
-                    <include name="chooseDestination"/>
+                    <include name="rdbtn"/>
+                </methods>
+            </class>
+
+            <class name="newPractice.autoSuggestiveddl">
+                <methods>
+                    <include name="autoSugest"/>
+                    <include name="autoSuggestive"/>
+                </methods>
+            </class>
+
+
+            <class name="newPractice.makeMyTripTest">
+                <methods>
+                    <include name="selectDate"/>
                 </methods>
             </class>
         </classes>

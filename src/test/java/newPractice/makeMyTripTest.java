@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -29,7 +30,7 @@ public class makeMyTripTest {
     sleep(1000);
     driver.navigate().refresh();
     sleep(1000);
-    String inputDate = "29-November";
+    String inputDate = "25-December";
     String[] dateSelect = inputDate.split("-");
     String month = dateSelect[1];
     String dt = dateSelect[0];
@@ -108,7 +109,7 @@ public class makeMyTripTest {
         if(dayTobeSelected[2].equalsIgnoreCase(dt))
         {
           int w=j+1;
-          sleep(1000);
+          Thread.sleep(3000);
           driver.findElement(By.xpath("(//*[@class='DayPicker-Months']//*[@class='DayPicker-Month']["+z+"]//*[@class='DayPicker-Day']//div)["+w+"]")).click();
           System.out.println("date selected");
           break;
@@ -119,5 +120,11 @@ public class makeMyTripTest {
     else {
       System.out.println("Month not found");
     }
+  }
+
+  @AfterSuite
+  public void teardown()
+  {
+    driver.quit();
   }
 }
