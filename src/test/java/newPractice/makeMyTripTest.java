@@ -18,7 +18,7 @@ public class makeMyTripTest {
   String mmt = "https://makemytrip.com/";
 
   @BeforeTest
-  public void launcBrowser() {
+  public void launchBrowser() {
     System.setProperty("webdriver.chrome.driver", "E:\\AutomationPractice\\SeleniumPractice\\chromedriver_win32\\chromedriver.exe");
     driver = new ChromeDriver();
     driver.get(mmt);
@@ -109,7 +109,7 @@ public class makeMyTripTest {
         if(dayTobeSelected[2].equalsIgnoreCase(dt))
         {
           int w=j+1;
-          Thread.sleep(3000);
+          Thread.sleep(1000);
           driver.findElement(By.xpath("(//*[@class='DayPicker-Months']//*[@class='DayPicker-Month']["+z+"]//*[@class='DayPicker-Day']//div)["+w+"]")).click();
           System.out.println("date selected");
           break;
