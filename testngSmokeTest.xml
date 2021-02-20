@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="E:/AutomationPractice/Codes/original/newPull/gitSeleniumProj/MvnPractice/src/test/java">
+        <classes>
+            <class name="collectionFrameworkPrac.ArrayListCode">
+                <methods>
+                    <include name="arrayToList"/>
+                </methods>
+            </class>
+            <class name="collectionFrameworkPrac.HashSetTest">
+                <methods>
+                    <include name="useHash"/>
+                </methods>
+            </class>
+            <class name="collectionFrameworkPrac.LinkedListTest">
+                <methods>
+                    <include name="insertEle"/>
+                </methods>
+            </class>
+            <class name="collectionFrameworkPrac.RemovingDuplicates">
+                <methods>
+                    <include name="removeDup"/>
+                    <include name="stringRemove"/>
+                    <include name="duplicateArray"/>
+                    <include name="stringRemoveFunc"/>
+                    <include name="pal"/>
+                    <include name="hashRemoveDuplicate"/>
+                </methods>
+            </class>
+            <class name="collectionFrameworkPrac.UserDefinedList2">
+                <methods>
+                    <include name="listTest"/>
+                </methods>
+            </class>
+            <class name="javaCodes.ReverseArray">
+                <methods>
+                    <include name="rev"/>
+                </methods>
+            </class>
+            <class name="javaCodes.ReversingWithoutAlteringSpace">
+                <methods>
+                    <include name="reverse"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="javaCodes.ReversingWordsInSentence">
+                <methods>
+                    <include name="rev"/>
+                </methods>
+            </class>
+            <class name="javaCodes.googleSearch">
+                <methods>
+                    <include name="search"/>
+                </methods>
+            </class>
+            <class name="javaCodes.palindrome">
+                <methods>
+                    <include name="strPal"/>
+                </methods>
+            </class>
+            <class name="lambdaExpressions.NameFilter">
+                <methods>
+                    <include name="streaamFilter"/>
+                </methods>
+            </class>
+            <class name="mvnPracticeTests.amazonMvnTest">
+                <methods>
+                    <include name="addToCart"/>
+                </methods>
+            </class>
+            <class name="mvnPracticeTests.tableAssignment">
+                <methods>
+                    <include name="tblAssignment"/>
+                </methods>
+            </class>
+            <class name="mvnPracticeTests.trackChangesFromLocal">
+                <methods>
+                    <include name="displayMessage"/>
+                </methods>
+            </class>
+            <class name="mvnPracticeTests.travelprac">
+                <methods>
+                    <include name="fromBox"/>
+                    <include name="flightTest"/>
+                    <include name="chooseDestination"/>
+                </methods>
+            </class>
+            <class name="newPractice.BootstrapMenu">
+                <methods>
+                    <include name="handleBootstrap"/>
+                </methods>
+            </class>
+            <class name="newPractice.CalendarCode">
+                <methods>
+                    <include name="selectDate"/>
+                    <include name="mmtDatePicker"/>
+                </methods>
+            </class>
+            <class name="newPractice.DataProviderTest">
+                <methods>
+                    <include name="launch"/>
+                </methods>
+            </class>
+            <class name="newPractice.DoubleClickTest">
+                <methods>
+                    <include name="doubleTest"/>
+                </methods>
+            </class>
+            <class name="newPractice.DropdownLooping">
+                <methods>
+                    <include name="ddLoop"/>
+                </methods>
+            </class>
+            <class name="newPractice.DynamicDDL">
+                <methods>
+                    <include name="ddl"/>
+                    <include name="flightCode"/>
+                    <include name="googleSearch"/>
+                    <include name="gmailLink"/>
+                    <include name="autoSuggest"/>
+                </methods>
+            </class>
+            <class name="newPractice.FileUpload">
+                <methods>
+                    <include name="upload"/>
+                </methods>
+            </class>
+            <class name="newPractice.GoogleSearch">
+                <methods>
+                    <include name="search"/>
+                    <include name="searchFruits"/>
+                </methods>
+            </class>
+            <class name="newPractice.HeadlessTesting">
+                <methods>
+                    <include name="headLesstest"/>
+                    <include name="htmlUnit"/>
+                </methods>
+            </class>
+            <class name="newPractice.LinkCounts">
+                <methods>
+                    <include name="countLinks"/>
+                </methods>
+            </class>
+            <class name="newPractice.ModalDialogues">
+                <methods>
+                    <include name="modal"/>
+                </methods>
+            </class>
+            <class name="newPractice.MouseOperations">
+                <methods>
+                    <include name="launchbrowser"/>
+                    <include name="tableHandle"/>
+                    <include name="mouseOperations"/>
+                    <include name="guruTest"/>
+                    <include name="amazonTest"/>
+                </methods>
+            </class>
+            <class name="newPractice.NestedFrames">
+                <methods>
+                    <include name="printMiddle"/>
+                </methods>
+            </class>
+            <class name="newPractice.RadioButtonClick">
+                <methods>
+                    <include name="rdbtn"/>
+                </methods>
+            </class>
+            <class name="newPractice.SortingWebTable">
+                <methods>
+                    <include name="sortTable"/>
+                </methods>
+            </class>
+            <class name="newPractice.TableScrollingTest">
+                <methods>
+                    <include name="verifySum"/>
+                </methods>
+            </class>
+            <class name="newPractice.WindowHandles">
+                <methods>
+                    <include name="windowTest"/>
+                    <include name="windowHandles"/>
+                    <include name="testQAWindow"/>
+                </methods>
+            </class>
+            <class name="newPractice.autoSuggestiveddl">
+                <methods>
+                    <include name="autoSugest"/>
+                    <include name="autoSuggestive"/>
+                </methods>
+            </class>
+            <class name="newPractice.brokenLinks">
+                <methods>
+                    <include name="brokenLinksCode"/>
+                    <include name="brokenLinksCodeTwo"/>
+                    <include name="brokenLinksTest"/>
+                </methods>
+            </class>
+            <class name="newPractice.datePicker">
+                <methods>
+                    <include name="calendarDate"/>
+                </methods>
+            </class>
+            <class name="newPractice.dynamicTables">
+                <methods>
+                    <include name="table"/>
+                    <include name="dynamicTableHandle"/>
+                    <include name="tableTest"/>
+                </methods>
+            </class>
+            <class name="newPractice.endToend">
+                <methods>
+                    <include name="openBrowser"/>
+                </methods>
+            </class>
+            <class name="newPractice.handlingAlerts">
+                <methods>
+                    <include name="alertTest"/>
+                </methods>
+            </class>
+            <class name="newPractice.hoverElementandSlider">
+                <methods>
+                    <include name="moveToElement"/>
+                    <include name="sliderTest"/>
+                    <include name="spiceJetTest"/>
+                </methods>
+            </class>
+            <class name="newPractice.iframeTest">
+                <methods>
+                    <include name="iframeTestMethod"/>
+                    <include name="getTextFrames"/>
+                    <include name="getElementsTest"/>
+                </methods>
+            </class>
+            <class name="newPractice.makeMyTripTest">
+                <methods>
+                    <include name="selectDate"/>
+                </methods>
+            </class>
+            <class name="newPractice.partialLinkTest">
+                <methods>
+                    <include name="openLink"/>
+                </methods>
+            </class>
+            <class name="newPractice.selectMethods">
+                <methods>
+                    <include name="singleSelect"/>
+                    <include name="multiSelect"/>
+                    <include name="multipleSelect"/>
+                    <include name="selectTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

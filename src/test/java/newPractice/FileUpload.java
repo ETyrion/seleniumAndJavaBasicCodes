@@ -7,11 +7,11 @@ import org.testng.annotations.Test;
 
 public class FileUpload {
 
-  String path = "E:\\download.jpg";
+  String path = "D:\\Songs\\Memes\\pic.jpg";
 
   @Test
   public void upload() throws InterruptedException {
-    System.setProperty("webdriver.chrome.driver", "E:\\AutomationPractice\\SeleniumPractice\\chromedriver_win32\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win32\\chromedriver.exe");
 
     //ChromeOptions option= new ChromeOptions();
     //option.setHeadless(true);
