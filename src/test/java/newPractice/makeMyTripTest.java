@@ -19,7 +19,7 @@ public class makeMyTripTest {
 
   @BeforeTest
   public void launchBrowser() {
-    System.setProperty("webdriver.chrome.driver", "E:\\AutomationPractice\\SeleniumPractice\\chromedriver_win32\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win32\\chromedriver.exe");
     driver = new ChromeDriver();
     driver.get(mmt);
     driver.manage().window().maximize();

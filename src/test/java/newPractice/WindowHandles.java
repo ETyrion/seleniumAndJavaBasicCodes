@@ -25,7 +25,7 @@ public class WindowHandles {
   @BeforeTest
   public void launchBrowser()
   {
-    System.setProperty("webdriver.chrome.driver", "E:\\AutomationPractice\\SeleniumPractice\\chromedriver_win32\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win32\\chromedriver.exe");
     driver = new ChromeDriver();
     driver.get(url);
     //driver.get(tqa);
@@ -34,7 +34,7 @@ public class WindowHandles {
 
   @Test
   public void windowTest() throws InterruptedException {
-    System.setProperty("webdriver.chrome.driver", "E:\\AutomationPractice\\SeleniumPractice\\chromedriver_win32\\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win32\\chromedriver.exe");
     //WebDriver driver = new ChromeDriver();
     //driver.get("http://www.popuptest.com/goodpopups.html");
     driver.findElement(By.xpath("//*[contains(text(),'Good PopUp #1')]")).click();
